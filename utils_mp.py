@@ -4,9 +4,8 @@ import numpy as np
 from cytoolz import curry
 import multiprocessing as mp
 from scipy import sparse as sp
-from sklearn.preprocessing import normalize
+from sklearn.preprocessing import normalize, StandardScaler
 from torch_geometric.data import Data, Batch
-from sklearn.preprocessing import StandardScaler
 
 
 def standardize(feat, mask):
